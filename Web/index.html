@@ -378,21 +378,7 @@
                             <th> Drone </th>
                           </tr>
                         </thead>
-                        <tbody>
-                          <tr>
-                            <td class="font-weight-medium"> 1 </td>
-                            <td> IMAGEN </td>
-                            <td> Tortuga </td>
-                            <td>
-                              <div class="progress">
-                                <div class="progress-bar bg-success progress-bar-striped" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-                              </div>
-                            </td>
-                            <td> coordinada1 </td>
-                            <td> 13:00 </td>
-                            <td> July 1, 2020</td>
-                            <td> 3 </td>
-                          </tr>
+                        <tbody id = "entries">
                         </tbody>
                       </table>
                     </div>
@@ -435,4 +421,39 @@
     <script src="assets/js/shared/mapeal_example_3.js"></script>
     <!-- End custom js for this page-->
   </body>
+
+  <script type="text/javascript">
+    var API_URL = 'https://c0p75hqu5g.execute-api.us-east-1.amazonaws.com/prod/entries';
+      $(document).ready(function () {
+        $.ajax({
+          type: 'GET',
+          url: API_URL,
+
+          success: function (data) {
+            $('#entries').html('');
+
+            data.Items.forEach(function (NewAnimalSightingsItem) {
+              text1 = '<tr>'
+              text2 = '<td class="font-weight-medium">'+NewAnimalSightingsItem.animal_id+'</td>'
+              text3 = '<td><img src="https://newanimalimages.s3.amazonaws.com/'+NewAnimalSightingsItem.image+'"></td>'
+              text4 = '<td>'+NewAnimalSightingsItem.possible_animal+'</td>'
+              text5 = '<td>'
+              text6 = '<div class="progress">'
+              text7 = '<div class="progress-bar bg-success progress-bar-striped" role="progressbar" style="width:'+NewAnimalSightingsItem.porcentage+'%" aria-valuenow= 25 aria-valuemin="0" aria-valuemax="100"></div>'
+              text8 = '</div>'
+              text9 = '</td>'
+              text10 = '<td>'+NewAnimalSightingsItem.latitude+','+NewAnimalSightingsItem.lingitude+'</td>'
+              text11 = '<td>'+NewAnimalSightingsItem.hour+'</td>'
+              text12 = '<td>'+NewAnimalSightingsItem.date+'</td>'
+              text13 = '<td>3</td>'
+              text14 = '</tr>'
+
+              html = text1+text2+text3+text4+text5+text6+text7+text8+text9+text10+text11+text12+text13+text14
+
+              $('#entries').append(html);
+            })
+          }
+        })
+      })
+   </script>
 </html>
