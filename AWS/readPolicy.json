@@ -1,0 +1,16 @@
+//Política de configuración del Bucket en S3 para poder acceder a sus elementos en modo lectura
+
+{
+    "Version": "2008-10-17",
+    "Statement": [
+        {
+            "Sid": "AllowPublicRead",
+            "Effect": "Allow",
+            "Principal": {
+                "AWS": "*"
+            },
+            "Action": "s3:GetObject",
+            "Resource": "arn:aws:s3:::newanimalimages/*"
+        }
+    ]
+}
