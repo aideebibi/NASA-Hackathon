@@ -58,7 +58,7 @@
               </a>
               <div class="dropdown-menu dropdown-menu-right navbar-dropdown preview-list pb-0" aria-labelledby="notificationDropdown">
                 <a class="dropdown-item py-3 border-bottom">
-                  <p class="mb-0 font-weight-medium float-left">You have 4 new notifications </p>
+                  <p class="mb-0 font-weight-medium float-left">You have 1 new notifications </p>
                   <span class="badge badge-pill badge-primary float-right">View all</span>
                 </a>
                 <a class="dropdown-item preview-item py-3">
@@ -66,7 +66,7 @@
                     <i class="mdi mdi-alert m-auto text-primary"></i>
                   </div>
                   <div class="preview-item-content">
-                    <h6 class="preview-subject font-weight-normal text-dark mb-1">Application Error</h6>
+                    <h6 class="preview-subject font-weight-normal text-dark mb-1">The drone has detected a possible new species</h6>
                     <p class="font-weight-light small-text mb-0"> Just now </p>
                   </div>
                 </a>
@@ -110,6 +110,24 @@
       <div class="container-fluid page-body-wrapper">
         <nav class="sidebar sidebar-offcanvas" id="sidebar">
           <ul class="nav">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">
+                <img src="icon/blog.png" style="max-width: 2rem;"> &nbsp;&nbsp;
+                <span class="menu-title">About Us</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="justification.html">
+                <img src="icon/planet.png" style="max-width: 2rem;"> &nbsp;&nbsp;
+                <span class="menu-title">Justification</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="reports.html">
+                <img src="icon/report3.png" style="max-width: 2rem;"> &nbsp;&nbsp;
+                <span class="menu-title">Reports</span>
+              </a>
+            </li>
             <li class="nav-item nav-profile">
               <div class="nav-link">
                 <button class="btn btn-success btn-block">New Report
@@ -117,285 +135,101 @@
                 </button>
               </div>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">
-                <img src="icon/report3.png" style="max-width: 2rem;"> &nbsp;&nbsp;
-                <span class="menu-title">Reports</span>
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">
-                <img src="icon/gallery.png" style="max-width: 2rem;"> &nbsp;&nbsp;
-                <span class="menu-title">Gallery</span>
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" data-toggle="collapse" href="#dashboard-dropdown" aria-expanded="false" aria-controls="dashboard-dropdown">
-                <img src="icon/blog.png" style="max-width: 2rem;"> &nbsp;&nbsp;
-                <span class="menu-title">Blog</span>
-                <i class="menu-arrow"></i>
-              </a>
-              <div class="collapse" id="dashboard-dropdown">
-                <ul class="nav flex-column sub-menu">
-                  <li class="nav-item">
-                    <a class="nav-link" href="blog.html">Where are the species?</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Dashboard 2</a>
-                  </li>
-                </ul>
-              </div>
-            </li>
           </ul>
         </nav>
-
 
 
 
        <!-- partial -->
         <div class="main-panel">
           <div class="content-wrapper">
-            <div class="row">
-              <div class="col-xl-3 col-lg-3 col-md-3 col-sm-6 grid-margin stretch-card">
-                <div class="card card-statistics">
-                  <div class="card-body">
-                    <div class="clearfix">
-                      <div class="float-left">
-                        <img src="icon/animal.png" style="max-width: 5rem;">
-                      </div>
-                      <div class="float-right">
-                        <p class="mb-0 text-right">Species identified</p>
-                        <div class="fluid-container">
-                          <h3 class="font-weight-medium text-right mb-0">853</h3>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div class="col-xl-3 col-lg-3 col-md-3 col-sm-6 grid-margin stretch-card">
-                <div class="card card-statistics">
-                  <div class="card-body">
-                    <div class="clearfix">
-                      <div class="float-left">
-                        <img src="icon/planet.png" style="max-width: 5rem;">
-                      </div>
-                      <div class="float-right">
-                        <p class="mb-0 text-right">New species identified</p>
-                        <div class="fluid-container">
-                          <h3 class="font-weight-medium text-right mb-0">3</h3>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-xl-3 col-lg-3 col-md-3 col-sm-6 grid-margin stretch-card">
-                <div class="card card-statistics">
-                  <div class="card-body">
-                    <div class="clearfix">
-                      <div class="float-left">
-                        <img src="icon/dron.png" style="max-width: 5rem;">
-                      </div>
-                      <div class="float-right">
-                        <p class="mb-0 text-right">Drones in use</p>
-                        <div class="fluid-container">
-                          <h3 class="font-weight-medium text-right mb-0">7</h3>
-                        </div>
-                      </div>
-                    </div>
-                    
-                  </div>
-                </div>
-              </div>
-              <div class="col-xl-3 col-lg-3 col-md-3 col-sm-6 grid-margin stretch-card">
-                <div class="card card-statistics">
-                  <div class="card-body">
-                    <div class="clearfix">
-                      <div class="float-left">
-                         <img src="icon/area-recorrida.png" style="max-width: 5rem;">
-                      </div>
-                      <div class="float-right">
-                        <p class="mb-0 text-right">Area covered</p>
-                        <div class="fluid-container">
-                          <h3 class="font-weight-medium text-right mb-0">623.36 [yd]</h3>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-
-
-            <div class="row">
-              <div class="col-sm-4 col-lg-4 col-md-4 grid-margin stretch-card">
-                <div class="card">
-                  <div class="card-body">
-                    <h4 class="card-title">Example 1</h4>
-                    <div class=" container">
-                      <div class="mapcontainer mapeal-example-2">
-                        <div class="map">
-                          <span>Alternative content for the map</span>
-                        </div>
-                        <div class="myLegend ">
-                          <span>Alternative content for the legend</span>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-sm-4 col-lg-4 col-md-4 grid-margin stretch-card">
-                <div class="card">
-                  <div class="card-body">
-                    <h4 class="card-title">Example 2</h4>
-                    <div class="container">
-                      <div class="mapcontainer mapeal-example-3 bg-blue">
-                        <div class="map">
-                          <span>Alternative content for the map</span>
-                        </div>
-                        <div style="margin:auto;">
-                          <div class="population" style="float:left;margin-right:40px;">
-                            <span>Alternative content for the legend</span>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div class="col-sm-4 col-md-4 col-lg-4 grid-margin stretch-card">
-                <div class="card">
-                  <div class="card-body">
-                    <div class="row">
-                      <h4 class="card-title font-weight-medium mb-0 d-none d-md-block">Species Classification</h4>
-                      <div class="col-md-5 d-flex align-items-center">
-
-                        <canvas id="UsersDoughnutChart" class="400x160 mb-4 mb-md-0" height="200"></canvas>
-                      </div>
-                    </div>
-                    <div class="row">
-                      <div class="col-md-7">
-                        <div class="wrapper mt-4">
-                          <div class="d-flex justify-content-between mb-2">
-                            <div class="d-flex align-items-center">
-                              <p class="mb-0 font-weight-medium">130</p>
-                              <small class="text-muted ml-2">Mammals</small>
-                            </div>
-                            <p class="mb-0 font-weight-medium">15.2%</p>
-                          </div>
-                          <div class="progress">
-                            <div class="progress-bar bg-primary" role="progressbar" style="width: 15.2%" aria-valuenow="15.2" aria-valuemin="0" aria-valuemax="100"></div>
-                          </div>
-                        </div>
-                        <div class="wrapper mt-4">
-                          <div class="d-flex justify-content-between mb-2">
-                            <div class="d-flex align-items-center">
-                              <p class="mb-0 font-weight-medium">50</p>
-                              <small class="text-muted ml-2">Birds</small>
-                            </div>
-                            <p class="mb-0 font-weight-medium">5.9%</p>
-                          </div>
-                          <div class="progress">
-                            <div class="progress-bar bg-success" role="progressbar" style="width: 5.9%" aria-valuenow="5.9" aria-valuemin="0" aria-valuemax="100"></div>
-                          </div>
-                        </div>
-                        <div class="wrapper mt-4">
-                          <div class="d-flex justify-content-between mb-2">
-                            <div class="d-flex align-items-center">
-                              <p class="mb-0 font-weight-medium">223</p>
-                              <small class="text-muted ml-2">Reptiles</small>
-                            </div>
-                            <p class="mb-0 font-weight-medium">26.1%</p>
-                          </div>
-                          <div class="progress">
-                            <div class="progress-bar bg-success" role="progressbar" style="width: 26.1%" aria-valuenow="26.1" aria-valuemin="0" aria-valuemax="100"></div>
-                          </div>
-                        </div>
-                        <div class="wrapper mt-4">
-                          <div class="d-flex justify-content-between mb-2">
-                            <div class="d-flex align-items-center">
-                              <p class="mb-0 font-weight-medium">264</p>
-                              <small class="text-muted ml-2">Amphibians</small>
-                            </div>
-                            <p class="mb-0 font-weight-medium">30.9%</p>
-                          </div>
-                          <div class="progress">
-                            <div class="progress-bar bg-success" role="progressbar" style="width: 30.9%" aria-valuenow="30.9" aria-valuemin="0" aria-valuemax="100"></div>
-                          </div>
-                        </div>
-                        <div class="wrapper mt-4">
-                          <div class="d-flex justify-content-between mb-2">
-                            <div class="d-flex align-items-center">
-                              <p class="mb-0 font-weight-medium">183</p>
-                              <small class="text-muted ml-2">Flora</small>
-                            </div>
-                            <p class="mb-0 font-weight-medium">21.5%</p>
-                          </div>
-                          <div class="progress">
-                            <div class="progress-bar bg-success" role="progressbar" style="width: 21.5%" aria-valuenow="21.5" aria-valuemin="0" aria-valuemax="100"></div>
-                          </div>
-                        </div>
-                        <div class="wrapper mt-4">
-                          <div class="d-flex justify-content-between mb-2">
-                            <div class="d-flex align-items-center">
-                              <p class="mb-0 font-weight-medium">3</p>
-                              <small class="text-muted ml-2">New</small>
-                            </div>
-                            <p class="mb-0 font-weight-medium">0.4%</p>
-                          </div>
-                          <div class="progress">
-                            <div class="progress-bar bg-success" role="progressbar" style="width: 0.4%" aria-valuenow="0.4" aria-valuemin="0" aria-valuemax="100"></div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div> <br>
-              
-            <div class="row">
-              <div class="col-lg-12 grid-margin">
-                <div class="card">
-                  <div class="card-body">
-                    <h4 class="card-title">Species identified by the drone</h4>
-                    <div class="table-responsive">
-                      <table class="table table-striped">
-                        <thead>
-                          <tr>
-                            <th> # </th>
-                            <th> Image </th>
-                            <th> Identified species </th>
-                            <th> Coincidence </th>
-                            <th> Coordinates </th>
-                            <th> Hour </th>
-                            <th> Date </th>
-                            <th> Drone </th>
-                          </tr>
-                        </thead>
-                        <tbody id = "entries">
-                        </tbody>
-                      </table>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
             
+            <div class="row">
+              <div class="col-lg-6 grid-margin">
+                <div class="card">
+                  <div class="card-header">
+                    What is project Itzá about?
+                  </div>
+                  <div class="card-body">
+                    <p class="mb-0">The project consists of three parts, the first is the creation of a autonomous robot, the implementation of strategically distributed power stations in the exploration area and the development of a website.</p> <br>
+                    <p class="mb-0">With this project we look forward to supporting the scientific community in the automation and efficiency in the search or recognition of new species, as it is estimated that there are 8.8 million species on the planet and approximately 1.9 million are known.</p>
+                    <div class="media">
+                      <img src="gif/research.gif" style="max-width: 15rem;" class="align-self-center mr-3">
+                      <div class="media-body"> <br>
+                        <p class="mb-0"> We also hope that our system can provide the necessary support to identify in a timely manner changes in the behavior of these species and thus stop or decrease the loss of biodiversity on Earth.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div> 
+              </div>   
+              <div class="col-lg-6 grid-margin">
+                <div class="card">
+                  <div class="card-header">
+                    Technology
+                  </div>
+                  <div class="card-body">
+                    <div class="media-body">
+                      <p class="mb-0">We create a robot whose design of a spider and an octocopter will allow you to overcome any obstacle that arises or access remote places. The robot has two cameras that will take pictures of its environment and with the use of artificial intelligence will compare the images obtained with those already existing in the NASA database, so that it can identify all the objects that surround it. </p><br><br>
+                    </div>
+                    <div class="media">
+                      <img src="icon/arania1.jpeg" style="max-width: 18rem;" class="align-self-center mr-3">
+                      <img src="icon/arania2.jpeg" style="max-width: 18rem;" class="align-self-center mr-3">
+                      <img src="icon/arania3.jpeg" style="max-width: 18rem;" class="align-self-center mr-3">
+                    </div> <br>
+                    <div class="media">
+                      <img src="icon/arania4.jpeg" style="max-width: 18rem;" class="align-self-center mr-3">
+                      <img src="icon/arania5.jpeg" style="max-width: 18rem;" class="align-self-center mr-3">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-lg-6 grid-margin">
+                <div class="card">
+                  <div class="card-header">
+                    Image recognition
+                  </div>
+                  <div class="card-body">
+                    <div class="media-body">
+                      <p class="mb-0">The photographs will be sent to our website along with the species name, percentage of coincidence, the location where it was taken, date and time. If a photograph has a percentage between 50% to 60% coincidence it will have to go through a second more specific analysis where if the resulting match percentage is 0% to 20% it will be classified as a possible new species and an alert will be sent to the scientist in charge through the website , so that it can then do the corresponding analyses.</p><br>
+                    </div>
+                    <div class="media">
+                      <img src="icon/reconocimiento.jpg" style="max-width: 18rem;" class="align-self-center mr-3">
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+
+              <div class="col-lg-6 grid-margin">
+                <div class="card">
+                  <div class="card-header">
+                    Power stations
+                  </div>
+                  <div class="card-body">
+                    <p class="mb-0"> Design and implementation of strategically distributed power stations in the area the robot is exploring, the function of these stations is to provide charge to the robots when they run out of battery. </p><br>
+                    <div class="media">
+                      <div class="media-body">
+                        <p class="mb-0">Robots will automatically be alerted when their battery is low,  so at that moment they finish their journey and head to the nearest station. The goal of distributing charging stations is that robots do not have to return to the location of the scientist who owns them, achieving a broader search.</p>
+                      </div>
+                      <img src="gif/World-min.gif" style="max-width: 15rem;" class="align-self-center mr-3">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+
           </div>
           <!-- content-wrapper ends -->
           <!-- partial:partials/_footer.html -->
           <footer class="footer">
             <div class="container-fluid clearfix">
-              <span class="text-muted d-block text-center text-sm-left d-sm-inline-block">Copyright © 2018
-                <a href="http://www.bootstrapdash.com/" target="_blank">Bootstrapdash</a>. All rights reserved.</span>
-              <span class="float-none float-sm-right d-block mt-1 mt-sm-0 text-center">Hand-crafted & made with
-                <i class="mdi mdi-heart text-danger"></i>
+              <span class="text-muted d-block text-center text-sm-left d-sm-inline-block">Pakal Team, 2020
+                <a href="#" target="_blank">Nasa Space Apps</a>
               </span>
             </div>
           </footer>
@@ -421,39 +255,4 @@
     <script src="assets/js/shared/mapeal_example_3.js"></script>
     <!-- End custom js for this page-->
   </body>
-
-  <script type="text/javascript">
-    var API_URL = 'https://c0p75hqu5g.execute-api.us-east-1.amazonaws.com/prod/entries';
-      $(document).ready(function () {
-        $.ajax({
-          type: 'GET',
-          url: API_URL,
-
-          success: function (data) {
-            $('#entries').html('');
-
-            data.Items.forEach(function (NewAnimalSightingsItem) {
-              text1 = '<tr>'
-              text2 = '<td class="font-weight-medium">'+NewAnimalSightingsItem.animal_id+'</td>'
-              text3 = '<td><img src="https://newanimalimages.s3.amazonaws.com/'+NewAnimalSightingsItem.image+'"></td>'
-              text4 = '<td>'+NewAnimalSightingsItem.possible_animal+'</td>'
-              text5 = '<td>'
-              text6 = '<div class="progress">'
-              text7 = '<div class="progress-bar bg-success progress-bar-striped" role="progressbar" style="width:'+NewAnimalSightingsItem.porcentage+'%" aria-valuenow= 25 aria-valuemin="0" aria-valuemax="100"></div>'
-              text8 = '</div>'
-              text9 = '</td>'
-              text10 = '<td>'+NewAnimalSightingsItem.latitude+','+NewAnimalSightingsItem.longitude+'</td>'
-              text11 = '<td>'+NewAnimalSightingsItem.hour+'</td>'
-              text12 = '<td>'+NewAnimalSightingsItem.date+'</td>'
-              text13 = '<td>'+NewAnimalSightingsItem.drone_number+'</td>'
-              text14 = '</tr>'
-
-              html = text1+text2+text3+text4+text5+text6+text7+text8+text9+text10+text11+text12+text13+text14
-
-              $('#entries').append(html);
-            })
-          }
-        })
-      })
-   </script>
 </html>
